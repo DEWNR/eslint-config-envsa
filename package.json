@@ -1,0 +1,29 @@
+{
+  "name": "lintconfig",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.config.js",
+    "stylelint.js",
+    "stylelint.config.js"
+  ],
+  "author": "Liam Rella",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.0.1",
+    "prettier": "^2.1.2",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.13.0"
+  }
+}
