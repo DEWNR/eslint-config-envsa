@@ -1,6 +1,11 @@
 {
-  "name": "lintconfig",
+  "name": "eslint-config-envsa",
   "version": "1.0.0",
+  "description": "A config that can be used by all DEW projects",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rellafella/eslint-config-envsa.git"
+  },
   "main": "index.js",
   "files": [
     "index.js",
@@ -10,11 +15,21 @@
   ],
   "author": "Liam Rella",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
     "eslint-plugin-react": "^7.22.0",
     "prettier": "^2.1.2",
