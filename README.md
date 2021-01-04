@@ -1,4 +1,4 @@
-# eslint-config-envsa
+# @envsa/eslint-config
 
 ## Features
 
@@ -10,20 +10,20 @@
 Install the package with
 
 ```sh
-npm i -D eslint-config-envsa
+npm i -D @envsa/eslint-config
 ```
 
 Then install the correct versions of each peerDependency package, which are
 listed by the command:
 
 ```sh
-npm info "eslint-config-envsa@latest" peerDependencies
+npm info "@envsa/eslint-config@latest" peerDependencies
 ```
 
 If using npm 5+, use this shortcut:
 
 ```sh
-npx install-peerdeps --dev eslint-config-envsa
+npx install-peerdeps --dev @envsa/eslint-config
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ Now add the config to either your `package.json`:
 ```json
 {
   "eslintConfig": {
-    "extends": "eslint-config-envsa"
+    "extends": "@envsa"
   }
 }
 ```
@@ -42,7 +42,7 @@ to your `.eslintrc`:
 
 ```json
 {
-  "extends": "eslint-config-envsa"
+  "extends": "@envsa"
 }
 ```
 
@@ -50,18 +50,18 @@ or `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: 'eslint-config-envsa'
+  extends: '@envsa'
 };
 ```
 
 ### Prettier Config
 
-This is how you use or extend the `eslint-config-envsa` prettier config in your
+This is how you use or extend the `@envsa/eslint-config` prettier config in your
 app:
 
 ```js
 // prettier.config.js
-module.exports = require('eslint-config-envsa/prettier.config');
+module.exports = require('@envsa/eslint-config/prettier.config');
 ```
 
 ## Assumptions

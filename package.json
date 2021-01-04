@@ -1,10 +1,10 @@
 {
-  "name": "@envsa/eslint-config-envsa",
+  "name": "@envsa/eslint-config",
   "version": "1.0.0",
   "description": "A config that can be used by all DEW projects",
   "repository": {
     "type": "git",
-    "url": "git@github.com:DEWNR/eslint-config-envsa.git"
+    "url": "git@github.com:DEWNR/eslint-config.git"
   },
   "publishConfig": {
     "access": "public"
