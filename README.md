@@ -10,7 +10,7 @@
 Install the package with
 
 ```sh
-npm i -D git+ssh://git@github.com/rellafella/eslint-config-envsa.git
+npm i -D eslint-config-envsa
 ```
 
 Then install the correct versions of each peerDependency package, which are
