@@ -1,6 +1,6 @@
 {
   "name": "@envsa/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A config that can be used by all DEW projects",
   "repository": {
     "type": "git",
