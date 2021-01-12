@@ -88,6 +88,7 @@ module.exports = {
     'selector-list-comma-space-before': 'never',
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-colon-notation': 'double',
+    'string-quotes': 'singls',
     'value-list-comma-newline-after': 'always-multi-line'
   }
 };
