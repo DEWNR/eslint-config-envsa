@@ -12,6 +12,7 @@ module.exports = {
           'function',
           'at-root',
           'include',
+          'latyer',
           'screen',
           'return',
           'mixin',
