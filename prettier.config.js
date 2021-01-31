@@ -10,5 +10,6 @@ module.exports = {
     'switch, case,default,endswitch',
     'ifchildren,endifchildren',
     'cache,endcache'
-  ]
+  ],
+  twigPrintWidth: 100
 };

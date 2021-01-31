@@ -1,0 +1,5 @@
+{% set redirectUrl = bookingEntry.url ?? 'booking/other/' ~ bookingEntry.operatorId %}
+
+{% set bookingEntry =
+  craft.entries().section('bookings').relatedTo(park).thingsToBook(category).one()
+%}
