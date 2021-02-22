@@ -1,10 +1,14 @@
 {
   "name": "@envsa/eslint-config",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A config that can be used by all DEW projects",
   "repository": {
     "type": "git",
     "url": "git@github.com:DEWNR/eslint-config.git"
+  },
+  "scripts": {
+    "lint": "eslint --fix --quiet ./test.prettier.config.js ./test.eslint.config.js ./test.stylelint.config.js",
+    "postinstall": "./init.js && npm run lint"
   },
   "publishConfig": {
     "access": "public"
