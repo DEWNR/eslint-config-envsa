@@ -1,6 +1,6 @@
 {
   "name": "@envsa/eslint-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A config that can be used by all DEW projects",
   "repository": {
     "type": "git",
@@ -13,8 +13,12 @@
   "files": [
     "index.js",
     "prettier.config.js",
-    "stylelint.config.js"
+    "stylelint.config.js",
+    "init.js"
   ],
+  "scripts": {
+    "postinstall": "node ./init.js"
+  },
   "author": "Liam Rella",
   "license": "ISC",
   "dependencies": {

@@ -31,7 +31,15 @@ npx install-peerdeps --dev @envsa/eslint-config
 
 ## Usage
 
-Now add the config to either your `package.json`:
+This package will create the following 3 initial config files during installation:
+
+* eslint.config.js
+* prettier.config.js
+* stylelint.config.js
+
+If the config file exists already, it won't create/replace the file.
+
+If you want to config manually, please add the config to either your `package.json`:
 
 ```json
 {
