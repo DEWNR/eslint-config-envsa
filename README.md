@@ -13,14 +13,17 @@ Install the package with
 npm i -D @envsa/eslint-config
 ```
 
-Then install the correct versions of each peerDependency package, which are
-listed by the command:
+Then install the peerDependency packages.
+```
+npm i -D eslint@^7.16.0 prettier@^2.1.2 stylelint@^13.8.0
+```
+
+The correct versions of each peerDependency package are listed by the command:
 
 ```sh
 npm info "@envsa/eslint-config@latest" peerDependencies
 ```
-
-If using npm 5+, use this shortcut:
+Or, if using npm 5+, use this shortcut:
 
 ```sh
 npx install-peerdeps --dev @envsa/eslint-config
