@@ -3,7 +3,6 @@
 ## Features
 
 - with prettier support, thanks to [eslint-plugin-prettier](prettier.io/docs/en/eslint.html#use-eslint-to-run-prettier)
-- with [react](https://reactjs.org/) support
 
 ## Installation
 
@@ -79,7 +78,7 @@ module.exports = require('@envsa/eslint-config/prettier.config');
 
 This ESLint configuration comes with some fundamental assumptions:
 
-- react and/or node environment
+- node environment
 - browser and/or node environment
 - parser: babel (used babel-eslint parser)
 
