@@ -25,7 +25,6 @@
     "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
-    "prettier-plugin-twig-melody": "^0.4.6",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-scss": "^3.18.0"
   },
@@ -40,7 +39,6 @@
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
     "prettier": "^2.1.2",
-    "prettier-plugin-twig-melody": "^0.4.6",
     "stylelint": "^13.8.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-scss": "^3.18.0"
