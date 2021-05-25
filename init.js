@@ -6,7 +6,7 @@ const configs = [
     content: "module.exports = require('@envsa/eslint-config/prettier.config');"
   },
   {
-    name: 'eslint.config.js',
+    name: '.eslintrc.js',
     content: "module.exports = {extends: '@envsa'}"
   },
   {
