@@ -11,7 +11,11 @@ module.exports = {
     es2021: true
   },
   plugins: [],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:vue/vue3-recommended'
+  ],
   rules: {
     semi: ['error', 'always'],
     'no-var': 2
