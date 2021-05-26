@@ -25,6 +25,7 @@
     "babel-eslint": "^10.1.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-vue": "^7.9.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-scss": "^3.18.0"
   },
