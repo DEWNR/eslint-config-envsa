@@ -41,5 +41,3 @@ module.exports = {
     'string-quotes': ['single', { avoidEscape: true }],
   },
 };
-
-console.log(tailwindAtRules);
