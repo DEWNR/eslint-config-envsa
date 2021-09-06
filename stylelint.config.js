@@ -9,7 +9,7 @@ module.exports = {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: [...tailwindAtRules, 'if', 'else'],
+        ignoreAtRules: [...tailwindAtRules, 'if', 'else', 'use'],
       },
     ],
     'at-rule-empty-line-before': [
