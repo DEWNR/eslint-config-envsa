@@ -16,6 +16,7 @@ module.exports = {
       'always',
       {
         except: ['after-same-name', 'first-nested', 'inside-block'],
+        ignore: ['after-comment'],
         ignoreAtRules: ['if', 'else'],
       },
     ],
