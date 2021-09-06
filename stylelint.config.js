@@ -12,17 +12,20 @@ module.exports = {
         ignoreAtRules: [
           ...tailwindAtRules,
           'if',
-          'else',
           'use',
-          'at-root',
           'each',
+          'else',
+          'mixin',
+          'screen',
+          'at-root',
+          'include',
+          'keyframes',
         ],
       },
     ],
     'at-rule-empty-line-before': [
       'always',
       {
-        except: ['after-same-name', 'first-nested', 'inside-block'],
         ignore: ['after-comment'],
         ignoreAtRules: ['if', 'else'],
       },
@@ -38,3 +41,5 @@ module.exports = {
     'string-quotes': ['single', { avoidEscape: true }],
   },
 };
+
+console.log(tailwindAtRules);
