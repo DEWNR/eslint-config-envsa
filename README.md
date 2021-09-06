@@ -13,6 +13,7 @@ npm i -D @envsa/eslint-config
 ```
 
 Then install the peerDependency packages.
+
 ```
 npm i -D eslint@^7.16.0 prettier@^2.1.2 stylelint@^13.8.0
 ```
@@ -22,6 +23,7 @@ The correct versions of each peerDependency package are listed by the command:
 ```sh
 npm info "@envsa/eslint-config@latest" peerDependencies
 ```
+
 Or, if using npm 5+, use this shortcut:
 
 ```sh
@@ -32,9 +34,9 @@ npx install-peerdeps --dev @envsa/eslint-config
 
 This package will create the following 3 initial config files during installation:
 
-* eslint.config.js
-* prettier.config.js
-* stylelint.config.js
+- eslint.config.js
+- prettier.config.js
+- stylelint.config.js
 
 If the config file exists already, it won't create/replace the file.
 
@@ -60,7 +62,7 @@ or `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: '@envsa'
+  extends: "@envsa",
 };
 ```
 
@@ -71,7 +73,7 @@ app:
 
 ```js
 // prettier.config.js
-module.exports = require('@envsa/eslint-config/prettier.config');
+module.exports = require("@envsa/eslint-config/prettier.config");
 ```
 
 ## Assumptions

@@ -1,19 +1,20 @@
 const fs = require('fs');
 const path = require('path');
+
 const configs = [
   {
-    name: 'prettier.config.js',
-    content: "module.exports = require('@envsa/eslint-config/prettier.config');"
+    name: '.eslintrc.js',
+    content: "module.exports = {extends: '@envsa'}",
   },
   {
-    name: '.eslintrc.js',
-    content: "module.exports = {extends: '@envsa'}"
+    name: 'prettier.config.js',
+    content: "module.exports = require('@envsa/eslint-config/prettier.config')",
   },
   {
     name: 'stylelint.config.js',
     content:
-      "module.exports = {extends: '@envsa/eslint-config/stylelint.config.js',ignoreFiles: ['./vendor/**/*']};"
-  }
+      "module.exports = {extends: '@envsa/eslint-config/stylelint.config.js',ignoreFiles: ['./vendor/**/*']};",
+  },
 ];
 
 const createConfigFiles = () => {

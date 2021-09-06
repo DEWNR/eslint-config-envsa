@@ -8,9 +8,9 @@ module.exports = {
         singleline: 20,
         multiline: {
           max: 1,
-          allowFirstLine: false
-        }
-      }
-    ]
-  }
+          allowFirstLine: false,
+        },
+      },
+    ],
+  },
 };
