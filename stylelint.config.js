@@ -26,8 +26,12 @@ module.exports = {
     'at-rule-empty-line-before': [
       'always',
       {
-        ignore: ['after-comment'],
-        ignoreAtRules: ['if', 'else'],
+        ignore: [
+          'after-comment',
+          'first-nested',
+          'blockless-after-same-name-blockless',
+        ],
+        ignoreAtRules: ['if', 'else', 'apply'],
       },
     ],
     'block-closing-brace-newline-after': [
