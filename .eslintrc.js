@@ -11,6 +11,7 @@ module.exports = {
     jest: true,
   },
   rules: {
+    'arrow-body-style': ['off'],
     'no-debugger': 0,
     'no-alert': 0,
     'no-await-in-loop': 0,
@@ -25,7 +26,8 @@ module.exports = {
       1,
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
+        argsIgnorePattern: 'res|next|^err|^_',
+        varsIgnorePattern: '^_',
       },
     ],
     'prefer-const': [
@@ -34,7 +36,6 @@ module.exports = {
         destructuring: 'all',
       },
     ],
-    'arrow-body-style': [2, 'as-needed'],
     'no-unused-expressions': [
       2,
       {
