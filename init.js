@@ -13,7 +13,7 @@ const configs = [
   {
     name: 'stylelint.config.js',
     content:
-      "module.exports = {extends: '@envsa/eslint-config/stylelint.config.js',ignoreFiles: ['./vendor/**/*']};",
+      "module.exports = {extends: '@envsa/eslint-config/stylelint.config.js'};",
   },
 ];
 

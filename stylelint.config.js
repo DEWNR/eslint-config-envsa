@@ -5,6 +5,7 @@ const tailwindAtRules =
 
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-tailwindcss'],
+  ignoreFiles: ['./vendor/**/*'],
   rules: {
     'at-rule-no-unknown': [
       true,
