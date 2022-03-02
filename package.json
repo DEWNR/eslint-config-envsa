@@ -16,8 +16,8 @@
   "author": "Liam Rella",
   "license": "ISC",
   "dependencies": {
-    "@babel/preset-react": "^7.16.7",
     "@babel/eslint-parser": "^7.14.7",
+    "@babel/preset-react": "^7.16.7",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-html": "^6.1.2",
@@ -25,6 +25,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-vue": "^7.14.0",
+    "melody-idom": "^1.7.5",
+    "melody-runtime": "^1.7.5",
     "prettier-plugin-tailwindcss": "^0.1.8",
     "prettier-plugin-twig-melody": "^0.4.6",
     "stylelint-config-standard": "^22.0.0",
