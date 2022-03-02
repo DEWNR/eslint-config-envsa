@@ -5,4 +5,28 @@ module.exports = {
   semi: true,
   singleQuote: true,
   arrowParens: 'always',
+  printWidth: 100,
+  overrides: [
+    {
+      files: '*.json',
+      options: {
+        printWidth: 240,
+      },
+    },
+  ],
+  plugins: [
+    './node_modules/prettier-plugin-tailwindcss',
+    './node_modules/prettier-plugin-twig-melody',
+  ],
+  tailwindConfig: './tailwind.config.js',
+  twigPrintWidth: 120,
+  twigSingleQuote: false,
+  twigMultiTags: [
+    'nav,endnav',
+    'minify,endminify',
+    'switch,case,default,endswitch',
+    'ifchildren,endifchildren',
+    'cache,endcache',
+    'js,endjs',
+  ],
 };
