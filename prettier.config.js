@@ -1,4 +1,8 @@
-module.exports = {
+const fs = require('fs');
+
+const tailwindConfigPath = './tailwind.config.js';
+
+const config = {
   trailingComma: 'es5',
   useTabs: false,
   tabWidth: 2,
@@ -14,11 +18,7 @@ module.exports = {
       },
     },
   ],
-  plugins: [
-    './node_modules/prettier-plugin-tailwindcss',
-    './node_modules/prettier-plugin-twig-melody',
-  ],
-  tailwindConfig: './tailwind.config.js',
+  plugins: ['./node_modules/prettier-plugin-twig-melody'],
   twigPrintWidth: 120,
   twigSingleQuote: false,
   twigMultiTags: [
@@ -30,3 +30,10 @@ module.exports = {
     'js,endjs',
   ],
 };
+
+if (fs.existsSync(tailwindConfigPath)) {
+  config.tailwindConfig = tailwindConfigPath;
+  config.plugins.push('./node_modules/prettier-plugin-tailwindcss');
+}
+
+module.exports = config;
