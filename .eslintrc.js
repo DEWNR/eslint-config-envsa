@@ -11,17 +11,12 @@ module.exports = {
     jest: true,
   },
   rules: {
-    'arrow-body-style': ['off'],
+    'arrow-body-style': 0,
     'no-debugger': 0,
     'no-alert': 0,
     'no-await-in-loop': 0,
-    'no-return-assign': ['error', 'except-parens'],
-    'no-restricted-syntax': [
-      2,
-      'ForInStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
+    'no-return-assign': [2, 'except-parens'],
+    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-unused-vars': [
       1,
       {
@@ -31,7 +26,7 @@ module.exports = {
       },
     ],
     'prefer-const': [
-      'error',
+      2,
       {
         destructuring: 'all',
       },
@@ -57,7 +52,7 @@ module.exports = {
     'max-len': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': [
-      'error',
+      2,
       {
         devDependencies: ['./*.js'],
       },
@@ -79,8 +74,17 @@ module.exports = {
         allowTemplateLiterals: true,
       },
     ],
+    camelcase: [
+      2,
+      {
+        properties: 'always',
+        ignoreGlobals: true,
+        ignoreDestructuring: true,
+        ignoreImports: true,
+      },
+    ],
     'prettier/prettier': [
-      'error',
+      2,
       {
         trailingComma: 'es5',
         useTabs: false,
