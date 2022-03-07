@@ -1,8 +1,4 @@
-const fs = require('fs');
-
-const tailwindConfigPath = './tailwind.config.js';
-
-const config = {
+module.exports = {
   trailingComma: 'es5',
   useTabs: false,
   tabWidth: 2,
@@ -30,10 +26,3 @@ const config = {
     'js,endjs',
   ],
 };
-
-if (fs.existsSync(tailwindConfigPath)) {
-  config.tailwindConfig = tailwindConfigPath;
-  config.plugins.push('./node_modules/prettier-plugin-tailwindcss');
-}
-
-module.exports = config;
