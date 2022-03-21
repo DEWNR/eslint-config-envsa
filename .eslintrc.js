@@ -77,7 +77,7 @@ module.exports = {
     camelcase: [
       2,
       {
-        properties: 'always',
+        properties: 'never',
         ignoreGlobals: true,
         ignoreDestructuring: true,
         ignoreImports: true,
