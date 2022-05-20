@@ -27,8 +27,6 @@
     "eslint-plugin-vue": "^7.14.0",
     "melody-idom": "^1.7.5",
     "melody-runtime": "^1.7.5",
-    "prettier-plugin-tailwindcss": "^0.1.8",
-    "prettier-plugin-twig-melody": "^0.4.6",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-config-tailwindcss": "0.0.1"
   },
