@@ -54,7 +54,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       2,
       {
-        devDependencies: ['./*.js'],
+        devDependencies: ['./*.js', '**/dev/*.js', '**/dev.js'],
       },
     ],
     'no-underscore-dangle': 0,
