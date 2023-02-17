@@ -1,7 +1,6 @@
 const tailwindConfig = require('stylelint-config-tailwindcss');
 
-const tailwindAtRules =
-  tailwindConfig.rules['at-rule-no-unknown'][1].ignoreAtRules;
+const tailwindAtRules = tailwindConfig.rules['at-rule-no-unknown'][1].ignoreAtRules;
 
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-tailwindcss'],
@@ -27,11 +26,7 @@ module.exports = {
     'at-rule-empty-line-before': [
       'always',
       {
-        ignore: [
-          'after-comment',
-          'first-nested',
-          'blockless-after-same-name-blockless',
-        ],
+        ignore: ['after-comment', 'first-nested', 'blockless-after-same-name-blockless'],
         ignoreAtRules: ['if', 'else', 'apply'],
       },
     ],
