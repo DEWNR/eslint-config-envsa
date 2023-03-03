@@ -1,0 +1,9 @@
+@tailwind base;
+
+@import './another';
+
+@layer components {
+  .c-buttom {
+    @apply bg-blue-600;
+  }
+}

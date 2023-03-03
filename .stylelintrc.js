@@ -1,16 +1,11 @@
-const tailwindConfig = require('stylelint-config-tailwindcss');
-
-const tailwindAtRules = tailwindConfig.rules['at-rule-no-unknown'][1].ignoreAtRules;
-
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-tailwindcss'],
+  extends: ['stylelint-config-standard'],
   ignoreFiles: ['./vendor/**/*'],
   rules: {
     'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
-          ...tailwindAtRules,
           'if',
           'use',
           'each',
@@ -20,6 +15,14 @@ module.exports = {
           'at-root',
           'include',
           'keyframes',
+          /* tailwind */
+          'tailwind',
+          'apply',
+          'layer',
+          'config',
+          'variants',
+          'responsive',
+          'screen',
         ],
       },
     ],
@@ -30,14 +33,19 @@ module.exports = {
         ignoreAtRules: ['if', 'else', 'apply'],
       },
     ],
-    'block-closing-brace-newline-after': [
-      'always',
+    'no-descending-specificity': null,
+    'import-notation': 'string',
+    'no-invalid-position-at-import-rule': [
+      true,
       {
-        ignoreAtRules: ['if', 'else'],
+        ignoreAtRules: ['tailwind'],
       },
     ],
-    'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null,
-    'string-quotes': ['single', { avoidEscape: true }],
   },
+  overrides: [
+    {
+      files: ['*.scss', '**/*.scss'],
+      customSyntax: 'postcss-scss',
+    },
+  ],
 };
