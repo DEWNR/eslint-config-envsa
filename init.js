@@ -8,7 +8,7 @@ const configs = [
   },
   {
     name: '.prettierrc.js',
-    content: "module.exports = require('@envsa/eslint-config/.prettierrc')",
+    content: "module.exports = require('@envsa/eslint-config/.prettierrc.js')",
   },
   {
     name: '.stylelintrc.js',
