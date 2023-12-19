@@ -17,26 +17,26 @@
   "author": "Liam Rella",
   "license": "ISC",
   "dependencies": {
-    "@babel/eslint-parser": "^7.14.7",
-    "@babel/preset-react": "^7.16.7",
+    "@babel/eslint-parser": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-html": "^6.1.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-vue": "^7.14.0",
-    "postcss-scss": "^4.0.6",
-    "stylelint-config-standard": "^30.0.1"
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-html": "^7.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss-scss": "^4.0.0",
+    "stylelint-config-standard": "^35.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.34.0",
-    "prettier": "^2.8.4",
-    "stylelint": "^15.1.0"
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^16.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.34.0",
-    "prettier": "^2.8.4",
-    "stylelint": "^15.1.0"
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^16.0.0"
   }
 }
