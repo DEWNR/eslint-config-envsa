@@ -1,4 +1,5 @@
-module.exports = {
+/** @type import('stylelint').Config */
+const config = {
   extends: ['stylelint-config-standard'],
   ignoreFiles: ['./vendor/**/*'],
   rules: {
@@ -49,3 +50,5 @@ module.exports = {
     },
   ],
 };
+
+export default config;
