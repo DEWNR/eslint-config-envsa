@@ -1,3 +1,4 @@
+/** @type {import('eslint').Linter.BaseConfig} */
 module.exports = {
   parser: 'vue-eslint-parser',
   extends: 'plugin:vue/vue3-recommended',
