@@ -14,6 +14,7 @@
     "./vue": "./vue.js",
     "./svelte": "./svelte.js",
     "./prettier": "./prettier/index.mjs",
+    "./prettier/svelte": "./prettier/svelte.mjs",
     "./stylelint": "./stylelint/index.mjs"
   },
   "main": "index.js",

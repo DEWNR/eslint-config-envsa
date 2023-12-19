@@ -14,15 +14,8 @@ const config = {
         printWidth: 240,
       },
     },
-    {
-      files: '*.svelte',
-      options: {
-        parser: 'svelte',
-      },
-    },
   ],
   pluginSearchDirs: ['.'],
-  plugins: ['prettier-plugin-svelte'],
 };
 
 export default config;
