@@ -11,8 +11,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test:style": "stylelint ./tests/test.scss",
-    "postinstall": "node ./init.js"
+    "test:style": "stylelint ./tests/test.scss"
   },
   "author": "Liam Rella",
   "license": "ISC",
