@@ -10,10 +10,10 @@
   "author": "Liam Rella",
   "exports": {
     ".": "./index.js",
-    "./prettier": "./prettier/index.mjs",
-    "./stylelint": "./stylelint/index.mjs",
     "./react": "./react.js",
-    "./vue": "./vue.js"
+    "./vue": "./vue.js",
+    "./prettier": "./prettier/index.mjs",
+    "./stylelint": "./stylelint/index.mjs"
   },
   "main": "index.js",
   "scripts": {
@@ -25,15 +25,17 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@rushstack/eslint-patch": "^1.6.1",
+    "@rushstack/eslint-patch": "^1.0.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-html": "^7.0.0",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-svelte": "^2.0.0",
     "eslint-plugin-vue": "^9.0.0",
     "postcss-scss": "^4.0.0",
+    "prettier-plugin-svelte": "^3.0.0",
     "stylelint-config-standard": "^35.0.0"
   },
   "devDependencies": {
@@ -43,7 +45,7 @@
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "prettier": "^3.0.0",
+    "prettier": ">=3.0.0",
     "stylelint": "^16.0.0"
   },
   "publishConfig": {
