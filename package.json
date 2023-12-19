@@ -12,6 +12,7 @@
     ".": "./index.js",
     "./react": "./react.js",
     "./vue": "./vue.js",
+    "./svelte": "./svelte.js",
     "./prettier": "./prettier/index.mjs",
     "./stylelint": "./stylelint/index.mjs"
   },
