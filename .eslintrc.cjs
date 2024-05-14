@@ -15,6 +15,7 @@ module.exports = {
     node: true,
     jest: true,
   },
+  plugins: ['html', 'prettier'],
   rules: {
     'arrow-body-style': 0,
     camelcase: [
@@ -34,7 +35,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       2,
       {
-        devDependencies: ['./*.{js,ts}', '**/dev/*.{js,ts}', '**/dev.{js,ts}'],
+        devDependencies: ['./*.{js,ts}', '**/dev/*.{js,ts}', '**/dev.{js,ts}', '**/*.spec.{js,ts}'],
       },
     ],
     'no-underscore-dangle': 0,
@@ -99,5 +100,4 @@ module.exports = {
     ],
     'space-before-function-paren': 0,
   },
-  plugins: ['html', 'prettier'],
 };
