@@ -1,4 +1,4 @@
-import baseConfig from '../.prettierrc.mjs';
+import baseConfig from '../.prettierrc.js';
 
 /** @type {import('prettier').Config} */
 const config = {
@@ -12,7 +12,7 @@ const config = {
       },
     },
   ],
-  plugins: ['prettier-plugin-svelte'],
+  plugins: [...baseConfig.plugins, 'prettier-plugin-svelte'],
 };
 
 export default config;

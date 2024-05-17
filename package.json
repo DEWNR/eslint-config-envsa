@@ -8,25 +8,27 @@
   },
   "license": "ISC",
   "author": "Liam Rella",
+  "type": "module",
   "exports": {
-    ".": "./index.js",
-    "./react": "./react.js",
-    "./vue": "./vue.js",
-    "./svelte": "./svelte.js",
-    "./prettier": "./prettier/index.mjs",
-    "./prettier/svelte": "./prettier/svelte.mjs",
-    "./stylelint": "./stylelint/index.mjs"
+    ".": "./index.cjs",
+    "./react": "./react.cjs",
+    "./vue": "./vue.cjs",
+    "./svelte": "./svelte.cjs",
+    "./prettier": "./prettier/index.js",
+    "./prettier/svelte": "./prettier/svelte.js",
+    "./stylelint": "./stylelint/index.js"
   },
   "main": "index.js",
   "scripts": {
+    "beta:bump": "npm version prerelease --preid beta",
+    "beta:publish": "npm publish --tag beta",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "bump:beta": "npm version prerelease --preid beta",
-    "publish:beta": "npm publish --tag beta"
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@prettier/plugin-php": "^0.22.2",
     "@rushstack/eslint-patch": "^1.0.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
@@ -42,12 +44,7 @@
   },
   "devDependencies": {
     "eslint": "^8.0.0",
-    "prettier": ">=3.0.0",
-    "stylelint": "^16.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": ">=3.0.0",
+    "prettier": "^3.0.0",
     "stylelint": "^16.0.0"
   },
   "publishConfig": {
