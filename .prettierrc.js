@@ -14,8 +14,19 @@ const config = {
         printWidth: 240,
       },
     },
+    {
+      files: '*.php',
+      options: {
+        phpVersion: process.env.DDEV_PHP_VERSION?.toString() ?? '8.2',
+        printWidth: 80,
+        parser: 'php',
+        tabWidth: 4,
+        trailingCommaPHP: true,
+      },
+    },
   ],
   pluginSearchDirs: ['.'],
+  plugins: ['@prettier/plugin-php'],
 };
 
 export default config;
