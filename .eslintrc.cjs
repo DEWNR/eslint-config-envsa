@@ -32,7 +32,14 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       2,
       {
-        devDependencies: ['./*.{js,ts}', '**/dev/*.{js,ts}', '**/dev.{js,ts}', '**/*.spec.{js,ts}'],
+        devDependencies: [
+          './*.{mjs,cjs,js,ts}', // any root project files
+          './.*.{mjs,cjs,js,ts}', // any dot files
+          './*.config.{mjs,cjs,js,ts}', // any config files
+          '**/dev/*.{mjs,cjs,js,ts}', // any files in a 'dev/' dir
+          '**/dev.{mjs,cjs,js,ts}', // any file named dev
+          '**/*.spec.{mjs,cjs,js,ts}', // any test files
+        ],
       },
     ],
     'no-underscore-dangle': 0,
