@@ -1,6 +1,14 @@
+require('@rushstack/eslint-patch/modern-module-resolution');
+
 /** @type {import('eslint').Linter.BaseConfig} */
 module.exports = {
-  extends: ['airbnb-base', 'prettier'],
+  extends: [
+    'airbnb-base',
+    'prettier',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+  ],
   parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
