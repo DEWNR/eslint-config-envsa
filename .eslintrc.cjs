@@ -46,6 +46,7 @@ module.exports = {
     'import/no-unresolved': [
       'error',
       {
+        caseSensitive: false,
         ignore: [
           '@sveltejs/*', // for some reason this just keeps erroring
         ],
