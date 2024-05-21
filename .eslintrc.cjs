@@ -2,13 +2,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 /** @type {import('eslint').Linter.BaseConfig} */
 module.exports = {
-  extends: [
-    'airbnb-base',
-    'prettier',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-  ],
+  extends: ['airbnb-base', 'prettier'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
@@ -22,9 +16,9 @@ module.exports = {
   },
   plugins: ['html', 'prettier'],
   rules: {
-    'arrow-body-style': 0,
+    'arrow-body-style': 'off',
     camelcase: [
-      2,
+      'error',
       {
         properties: 'never',
         ignoreGlobals: true,
@@ -32,13 +26,12 @@ module.exports = {
         ignoreImports: true,
       },
     ],
-    'comma-dangle': 0,
-    'consistent-return': 0,
-    'func-names': 0,
-    import: 0,
-    'import/extensions': 0,
+    'comma-dangle': 'off',
+    'consistent-return': 'off',
+    'func-names': 'off',
+    'import/extensions': 'off',
     'import/no-extraneous-dependencies': [
-      2,
+      'error',
       {
         devDependencies: [
           './*.{mjs,cjs,js,ts}', // any root project files
@@ -50,36 +43,44 @@ module.exports = {
         ],
       },
     ],
-    'no-underscore-dangle': 0,
-    'import/prefer-default-export': 0,
-    'max-len': 0,
-    'no-alert': 0,
-    'no-await-in-loop': 0,
-    'no-console': 0,
-    'no-debugger': 0,
+    'import/no-unresolved': [
+      'error',
+      {
+        ignore: [
+          '@sveltejs/*', // for some reason this just keeps erroring
+        ],
+      },
+    ],
+    'import/prefer-default-export': 'off',
+    'no-underscore-dangle': 'off',
+    'max-len': 'off',
+    'no-alert': 'off',
+    'no-await-in-loop': 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
     'no-param-reassign': [
-      2,
+      'error',
       {
         props: false,
       },
     ],
-    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
-    'no-return-assign': [2, 'except-parens'],
+    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+    'no-return-assign': ['error', 'except-parens'],
     'no-shadow': [
-      2,
+      'error',
       {
         hoist: 'all',
         allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
       },
     ],
     'no-unused-expressions': [
-      2,
+      'error',
       {
         allowTaggedTemplates: true,
       },
     ],
     'no-unused-vars': [
-      1,
+      'warn',
       {
         ignoreRestSiblings: true,
         argsIgnorePattern: 'res|next|^err|^_',
@@ -87,13 +88,13 @@ module.exports = {
       },
     ],
     'prefer-const': [
-      2,
+      'error',
       {
         destructuring: 'all',
       },
     ],
     'prettier/prettier': [
-      2,
+      'error',
       {
         trailingComma: 'es5',
         useTabs: false,
@@ -103,13 +104,13 @@ module.exports = {
       },
     ],
     quotes: [
-      2,
+      'error',
       'single',
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
       },
     ],
-    'space-before-function-paren': 0,
+    'space-before-function-paren': 'off',
   },
 };
