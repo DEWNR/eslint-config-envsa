@@ -43,15 +43,6 @@ module.exports = {
         ],
       },
     ],
-    'import/no-unresolved': [
-      'error',
-      {
-        caseSensitive: false,
-        ignore: [
-          '@sveltejs/*', // for some reason this just keeps erroring
-        ],
-      },
-    ],
     'import/prefer-default-export': 'off',
     'no-underscore-dangle': 'off',
     'max-len': 'off',
