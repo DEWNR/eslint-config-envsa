@@ -15,6 +15,13 @@ module.exports = {
     jest: true,
   },
   plugins: ['html', 'prettier'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
   rules: {
     'arrow-body-style': 'off',
     camelcase: [
