@@ -5,12 +5,6 @@ module.exports = {
     {
       files: ['*.svelte'],
       parser: 'svelte-eslint-parser',
-      settings: {
-        'import/parsers': {
-          'svelte-eslint-parser': ['.svelte'],
-          '@babel/eslint-parser': ['.js'],
-        },
-      },
       rules: {
         'import/no-mutable-exports': 'off',
       },
