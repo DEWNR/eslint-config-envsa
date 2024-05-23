@@ -6,6 +6,7 @@ module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
+    sourceType: 'module',
     ecmaVersion: 2020,
   },
   env: {
@@ -22,7 +23,7 @@ module.exports = {
       },
     },
     'import/parsers': {
-      // '@babel/eslint-parser': ['.js', '.mjs', '.cjs'],
+      '@babel/eslint-parser': ['.js', '.mjs', '.cjs'],
     },
   },
   rules: {
