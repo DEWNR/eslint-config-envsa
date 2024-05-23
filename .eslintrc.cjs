@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     'import/parsers': {
-      '@babel': ['.js', '.mjs', '.cjs'],
+      '@babel/eslint-parser': ['.js', '.mjs', '.cjs'],
     },
   },
   rules: {
