@@ -22,6 +22,9 @@ module.exports = {
         alwaysTryTypes: true,
       },
     },
+    'import/parsers': {
+      '@babel/eslint-parser': ['.js'],
+    },
   },
   rules: {
     'arrow-body-style': 'off',
