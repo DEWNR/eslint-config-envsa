@@ -21,6 +21,9 @@ module.exports = {
         alwaysTryTypes: true,
       },
     },
+    'import/parsers': {
+      '@babel': ['.js', '.mjs', '.cjs'],
+    },
   },
   rules: {
     'arrow-body-style': 'off',
