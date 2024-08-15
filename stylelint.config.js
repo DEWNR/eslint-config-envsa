@@ -1,5 +1,5 @@
 /** @type import('stylelint').Config */
-const config = {
+export default {
   extends: ['stylelint-config-standard'],
   ignoreFiles: ['./vendor/**/*'],
   rules: {
@@ -16,7 +16,7 @@ const config = {
           'at-root',
           'include',
           'keyframes',
-          /* tailwind */
+          /* Tailwind */
           'tailwind',
           'apply',
           'layer',
@@ -34,7 +34,7 @@ const config = {
         ignoreAtRules: ['if', 'else', 'apply'],
       },
     ],
-    'no-descending-specificity': null,
+    'no-descending-specificity': false,
     'import-notation': 'string',
     'no-invalid-position-at-import-rule': [
       true,
@@ -50,5 +50,3 @@ const config = {
     },
   ],
 };
-
-export default config;

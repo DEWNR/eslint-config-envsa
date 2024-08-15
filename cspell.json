@@ -1,0 +1,32 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [
+    "typescript",
+    "softwareTerms",
+    "node",
+    "en_AU",
+    "npm",
+    "misc",
+    "filetypes"
+  ],
+  "words": [
+    "blockless",
+    "camelcase",
+    "ddev",
+    "defaultstatus",
+    "envsa",
+    "nonconstructor",
+    "plusplus",
+    "preid",
+    "rellafella",
+    "stylelint",
+    "stylelintrc",
+    "trivago",
+    "tsup"
+  ],
+  "ignoreWords": [],
+  "import": []
+}

@@ -1,7 +1,7 @@
-import baseConfig from '../.prettierrc.js';
+import baseConfig from './index';
 
-/** @type {import('prettier').Config} */
-const config = {
+/** @type {import('src/prettier').Config} */
+export default {
   ...baseConfig,
   overrides: [
     ...baseConfig.overrides,
@@ -14,5 +14,3 @@ const config = {
   ],
   plugins: [...baseConfig.plugins, 'prettier-plugin-svelte'],
 };
-
-export default config;

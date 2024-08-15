@@ -62,7 +62,7 @@ or `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: "@envsa",
+  extends: '@envsa',
 };
 ```
 
@@ -73,7 +73,7 @@ app:
 
 ```js
 // prettier.config.js
-module.exports = require("@envsa/eslint-config/prettier.config");
+module.exports = require('@envsa/eslint-config/prettier.config');
 ```
 
 ## Assumptions

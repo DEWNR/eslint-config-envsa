@@ -1,5 +1,5 @@
 /** @type {import('prettier').Config} */
-const config = {
+export default {
   trailingComma: 'es5',
   useTabs: false,
   tabWidth: 2,
@@ -15,6 +15,15 @@ const config = {
       },
     },
     {
+      files: '*.json5',
+      options: {
+        parser: 'json5',
+        quoteProps: 'preserve',
+        singleQuote: false,
+        trailingComma: 'none',
+      },
+    },
+    {
       files: '*.php',
       options: {
         phpVersion: process.env.DDEV_PHP_VERSION?.toString() ?? '8.2',
@@ -25,8 +34,6 @@ const config = {
       },
     },
   ],
-  pluginSearchDirs: ['.'],
-  plugins: ['@prettier/plugin-php'],
+  plugins: ['prettier-plugin-organize-imports', '@prettier/plugin-php'],
+  organizeImportsSkipDestructiveCodeActions: true,
 };
-
-export default config;
