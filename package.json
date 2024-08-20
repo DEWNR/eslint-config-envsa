@@ -34,16 +34,13 @@
     "prettier-plugin-organize-imports": "^4.0.0",
     "semver": "^7.6.3",
     "svelte-eslint-parser": "^0.41.0",
-    "vue-eslint-parser": "^9.4.3"
-  },
-  "devDependencies": {
+    "vue-eslint-parser": "^9.4.3",
     "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
     "@babel/preset-react": "^7.24.7",
     "@cspell/eslint-plugin": "^8.13.3",
     "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.9.0",
-    "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-import-resolver-vite": "^2.0.1",
@@ -54,18 +51,20 @@
     "eslint-plugin-unicorn": "^55.0.0",
     "globals": "^15.9.0",
     "postcss-scss": "^4.0.9",
-    "prettier": "^3.0.0",
     "prettier-plugin-svelte": "^3.2.6",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
     "stylelint": "^16.0.0",
-    "stylelint-config-standard": "^36.0.1",
     "type-fest": "^4.24.0",
     "vitest": "^2.0.5"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
     "prettier": "^3.0.0",
-    "stylelint": "^16.0.0",
-    "typescript": "^5.5.4"
+    "stylelint": "^16.0.0"
   },
   "publishConfig": {
     "access": "public"
