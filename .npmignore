@@ -2,3 +2,6 @@
 .gitignore
 tests
 package-lock.json
+vitest.config.json
+README.md
+cspell.json
