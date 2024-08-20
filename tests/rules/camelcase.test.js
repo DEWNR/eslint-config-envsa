@@ -1,4 +1,13 @@
+/* eslint-disable capitalized-comments */
 import { testAll } from '../common';
+
+// Allow for these options...
+// {
+//   ignoreDestructuring: true,
+//   ignoreGlobals: true,
+//   ignoreImports: true,
+//   properties: 'never',
+// },
 
 /** @type {import('../common').TestCase[]} */
 const testCases = [
