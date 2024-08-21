@@ -11,6 +11,7 @@
   "type": "module",
   "exports": {
     ".": "./src/index.js",
+    "./cspell": "./src/cspell/cspell.config.cjs",
     "./prettier": "./src/prettier/index.js",
     "./prettier/svelte": "./src/prettier/svelte.js",
     "./stylelint": "./src/stylelint/index.js"
