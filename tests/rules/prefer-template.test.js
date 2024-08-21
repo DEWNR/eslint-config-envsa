@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-globals */
-import { testAll } from '../common';
+import { testAll } from '../common.js';
 
-/** @type {import('../common').TestCase[]} */
+/** @type {import('../common.js').TestCase[]} */
 const testCases = [
   {
     name: 'should allow template literals',

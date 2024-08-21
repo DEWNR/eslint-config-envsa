@@ -10,7 +10,7 @@ export default {
   'import-x/export': 2,
   'import-x/exports-last': 2,
   'import-x/first': 2,
-  'import-x/extensions': 0,
+  'import-x/extensions': [2, 'ignorePackages'],
   'import-x/newline-after-import': 2,
   'import-x/no-extraneous-dependencies': [
     2,

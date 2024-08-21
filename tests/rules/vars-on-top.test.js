@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prevent-abbreviations */
-import { testAll } from '../common';
+import { testAll } from '../common.js';
 
-/** @type {import('../common').TestCase[]} */
+/** @type {import('../common.js').TestCase[]} */
 const testCases = [
   {
     name: 'should allow variable declarations at the top of a function',

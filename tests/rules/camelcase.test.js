@@ -1,5 +1,5 @@
 /* eslint-disable capitalized-comments */
-import { testAll } from '../common';
+import { testAll } from '../common.js';
 
 // Allow for these options...
 // {
@@ -9,7 +9,7 @@ import { testAll } from '../common';
 //   properties: 'never',
 // },
 
-/** @type {import('../common').TestCase[]} */
+/** @type {import('../common.js').TestCase[]} */
 const testCases = [
   {
     name: 'should allow camelCase',

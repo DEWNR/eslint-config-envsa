@@ -1,6 +1,6 @@
-import { testAll } from '../common';
+import { testAll } from '../common.js';
 
-/** @type {import('../common').TestCase[]} */
+/** @type {import('../common.js').TestCase[]} */
 const testCases = [
   {
     name: 'should allow function declarations in the top-level scope',

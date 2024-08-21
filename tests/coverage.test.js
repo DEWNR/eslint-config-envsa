@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, test } from 'vitest';
-import rules from '../src/rules/base';
+import rules from '../src/rules/base.js';
 
 describe('Do we have tests for all the rules that we specify', () => {
   test('one test file per rule', () => {

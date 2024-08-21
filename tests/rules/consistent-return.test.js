@@ -1,8 +1,8 @@
-import { testAll } from '../common';
+import { testAll } from '../common.js';
 
 const ignoredRules = ['unicorn/prefer-ternary', 'no-constant-condition', 'no-else-return'];
 
-/** @type {import('../common').TestCase[]} */
+/** @type {import('../common.js').TestCase[]} */
 const testCases = [
   {
     name: 'should allow consistent return with values',
