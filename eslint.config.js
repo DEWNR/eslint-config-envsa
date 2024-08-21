@@ -1,5 +1,6 @@
 import parserBabel from '@babel/eslint-parser';
 import pluginCspell from '@cspell/eslint-plugin';
+import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
 import configPrettier from 'eslint-config-prettier';
 import pluginHtml from 'eslint-plugin-html';
@@ -7,9 +8,12 @@ import pluginImportX from 'eslint-plugin-import-x';
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
+import path from 'node:path';
 import prettierConfig from './prettier.config.js';
 import rulesBase from './src/rules/base.js';
 import rulesImport from './src/rules/import.js';
+
+const gitignorePath = path.join(process.cwd(), '.gitignore');
 
 /**
  * A reminder of eslint number syntax.
@@ -20,7 +24,8 @@ import rulesImport from './src/rules/import.js';
  */
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+const config = [
+  includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
   pluginUnicorn.configs['flat/recommended'],
   {
@@ -85,3 +90,4 @@ export default [
     },
   },
 ];
+export default config;
