@@ -1,6 +1,5 @@
 import parserBabel from '@babel/eslint-parser';
 import pluginCspell from '@cspell/eslint-plugin';
-import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
 import configPrettier from 'eslint-config-prettier';
 import pluginHtml from 'eslint-plugin-html';
@@ -8,15 +7,9 @@ import pluginImportX from 'eslint-plugin-import-x';
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import prettierConfig from './prettier.config.js';
 import rulesBase from './src/rules/base.js';
 import rulesImport from './src/rules/import.js';
-
-const filename = fileURLToPath(import.meta.url);
-const dirname = path.dirname(filename);
-const gitignorePath = path.join(dirname, '.gitignore');
 
 /**
  * A reminder of eslint number syntax.
@@ -28,7 +21,6 @@ const gitignorePath = path.join(dirname, '.gitignore');
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  includeIgnoreFile(gitignorePath),
   eslint.configs.recommended,
   pluginUnicorn.configs['flat/recommended'],
   {
