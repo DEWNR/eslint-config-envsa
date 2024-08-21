@@ -26,6 +26,10 @@ const gitignorePath = path.join(process.cwd(), '.gitignore');
 /** @type {import('eslint').Linter.Config[]} */
 const config = [
   includeIgnoreFile(gitignorePath),
+  {
+    name: 'explicit ignore patterns',
+    ignores: ['web/', 'vendor/', 'playwright-report/', 'node_modules/', '.ddev/', 'storage/'],
+  },
   eslint.configs.recommended,
   pluginUnicorn.configs['flat/recommended'],
   {
