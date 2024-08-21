@@ -5,6 +5,7 @@ import { beforeAll, describe, expect, test } from 'vitest';
 const defaultIgnoredRules = [
   'unicorn/filename-case',
   'unicorn/no-empty-file',
+  'unicorn/prefer-module',
   'no-empty',
   'no-undef',
   'no-unused-vars',
