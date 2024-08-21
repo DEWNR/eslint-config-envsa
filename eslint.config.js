@@ -24,7 +24,7 @@ const gitignorePath = path.join(process.cwd(), '.gitignore');
  */
 
 /** @type {import('eslint').Linter.Config[]} */
-const config = [
+export default [
   {
     ignores: includeIgnoreFile(gitignorePath)?.ignores,
   },
@@ -92,4 +92,3 @@ const config = [
     },
   },
 ];
-export default config;
