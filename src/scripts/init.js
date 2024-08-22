@@ -2,9 +2,7 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { format } from 'prettier';
 import { satisfies } from 'semver';
-import prettierConfig from '../prettier/index.js';
 
 /** @type {string} */
 const CWD = process.cwd();
@@ -46,8 +44,7 @@ const LOOKUP = {
   eslint: {
     old: ['.eslintrc.js', '.eslintrc.cjs', '.eslintrc.yaml', '.eslintrc.yml', '.eslintrc.json'],
     new: 'eslint.config.js',
-    content:
-      'import envsa from "@envsa/eslint-config";/** @type {import(\'eslint\').Linter.Config[]} */export default [eslint.configs.base];',
+    content: `import configEnvsa from '@envsa/eslint-config';\n\nexport default [...configEnvsa.configs.base];`,
   },
   prettier: {
     old: [
@@ -60,7 +57,7 @@ const LOOKUP = {
     ],
     new: 'prettier.config.js',
     content:
-      'import envsa from "@envsa/eslint-config/prettier";/** @type {import(\'prettier\').Config} */export default {...envsa}',
+      'import configEnvsa from "@envsa/eslint-config/prettier";\n\n/** @type {import(\'prettier\').Config} */\nexport default {...configEnvsa}',
   },
   stylelint: {
     old: [
@@ -73,7 +70,12 @@ const LOOKUP = {
     ],
     new: 'stylelint.config.js',
     content:
-      'import envsa from "@envsa/eslint-config/stylelint";/** @type {import(\'stylelint\').Config} */export default {...envsa}',
+      'import configEnvsa from "@envsa/eslint-config/stylelint";\n\n/** @type {import(\'stylelint\').Config} */\nexport default {...configEnvsa}',
+  },
+  cspell: {
+    old: [],
+    new: 'cspell.json',
+    content: '{\n  "import": ["@envsa/eslint-config/cspell"]\n}',
   },
 };
 
@@ -104,8 +106,7 @@ async function handleConfigFiles(name) {
 
   // Create new config file
   const newPath = path.join(CWD, config.new);
-  const content = await format(config.content, prettierConfig);
-  fs.writeFileSync(newPath, content);
+  fs.writeFileSync(newPath, config.content);
 }
 
 function installPeerDependencies() {
@@ -141,6 +142,7 @@ function init() {
   handleConfigFiles('eslint');
   handleConfigFiles('prettier');
   handleConfigFiles('stylelint');
+  handleConfigFiles('cspell');
 }
 
 init();
