@@ -44,7 +44,7 @@ const LOOKUP = {
   eslint: {
     old: ['.eslintrc.js', '.eslintrc.cjs', '.eslintrc.yaml', '.eslintrc.yml', '.eslintrc.json'],
     new: 'eslint.config.js',
-    content: `import configEnvsa from '@envsa/eslint-config';\n\nexport default [...configEnvsa.configs.base];`,
+    content: `import configEnvsa from '@envsa/eslint-config';\n\n/** @type {import('eslint').Linter.Config[]} */\nexport default [...configEnvsa.configs.base];\n`,
   },
   prettier: {
     old: [
@@ -56,8 +56,7 @@ const LOOKUP = {
       '.prettierrc.json',
     ],
     new: 'prettier.config.js',
-    content:
-      'import configEnvsa from "@envsa/eslint-config/prettier";\n\n/** @type {import(\'prettier\').Config} */\nexport default {...configEnvsa}',
+    content: `import configEnvsa from '@envsa/eslint-config/prettier';\n\n/** @type {import('prettier').Config} */\nexport default { ...configEnvsa };\n`,
   },
   stylelint: {
     old: [
@@ -69,13 +68,12 @@ const LOOKUP = {
       '.stylelintrc.json',
     ],
     new: 'stylelint.config.js',
-    content:
-      'import configEnvsa from "@envsa/eslint-config/stylelint";\n\n/** @type {import(\'stylelint\').Config} */\nexport default {...configEnvsa}',
+    content: `import configEnvsa from '@envsa/eslint-config/stylelint';\n\n/** @type {import('stylelint').Config} */\nexport default { ...configEnvsa };\n`,
   },
   cspell: {
     old: [],
     new: 'cspell.json',
-    content: '{\n  "import": ["@envsa/eslint-config/cspell"],\n  "words": []\n}',
+    content: '{\n  "import": ["@envsa/eslint-config/cspell"],\n  "words": []\n}\n',
   },
 };
 
