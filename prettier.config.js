@@ -33,6 +33,13 @@ export default {
         trailingCommaPHP: true,
       },
     },
+    {
+      files: '*.{yml,yaml}',
+      options: {
+        singleQuote: false,
+        tabWidth: 4,
+      },
+    },
   ],
   plugins: ['prettier-plugin-organize-imports', '@prettier/plugin-php'],
   organizeImportsSkipDestructiveCodeActions: true,
