@@ -75,7 +75,7 @@ const LOOKUP = {
   cspell: {
     old: [],
     new: 'cspell.json',
-    content: '{\n  "import": ["@envsa/eslint-config/cspell"]\n}',
+    content: '{\n  "import": ["@envsa/eslint-config/cspell"],\n  "words": []\n}',
   },
 };
 
