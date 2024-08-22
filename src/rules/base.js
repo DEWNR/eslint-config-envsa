@@ -36,7 +36,13 @@ export default {
       properties: 'never',
     },
   ],
-  'capitalized-comments': 2,
+  'capitalized-comments': [
+    2,
+    'always',
+    {
+      ignoreConsecutiveComments: true,
+    },
+  ],
   'consistent-return': 2,
   'dot-notation': 2,
   eqeqeq: 2,
