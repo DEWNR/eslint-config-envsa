@@ -5,8 +5,9 @@ defaultstatus
 dewnrger
 drawnoxima
 envsa
-nonconstructor
+lazysizes
 msedge
+nonconstructor
 plusplus
 preid
 rellafella
