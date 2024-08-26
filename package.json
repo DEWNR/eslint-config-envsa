@@ -46,6 +46,7 @@
     "postcss-scss": "^4.0.9",
     "prettier-plugin-organize-imports": "^4.0.0",
     "prettier-plugin-svelte": "^3.2.6",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "semver": "^7.6.3",
     "stylelint-config-standard": "^36.0.1",
     "svelte-eslint-parser": "^0.41.0",

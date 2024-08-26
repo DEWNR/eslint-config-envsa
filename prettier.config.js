@@ -41,6 +41,10 @@ export default {
       },
     },
   ],
-  plugins: ['prettier-plugin-organize-imports', '@prettier/plugin-php'],
+  plugins: [
+    'prettier-plugin-organize-imports',
+    '@prettier/plugin-php',
+    // 'prettier-plugin-tailwindcss',
+  ],
   organizeImportsSkipDestructiveCodeActions: true,
 };
