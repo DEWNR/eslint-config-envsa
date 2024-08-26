@@ -79,6 +79,12 @@ export default [
       html: pluginHtml,
     },
   },
+  {
+    files: ['**/*.test.js'],
+    rules: {
+      'no-await-in-loop': 0,
+    },
+  },
   configPrettier,
   pluginPrettierRecommended,
   {
