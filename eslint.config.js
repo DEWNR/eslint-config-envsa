@@ -12,6 +12,7 @@ import path from 'node:path';
 import prettierConfig from './prettier.config.js';
 import rulesBase from './src/rules/base.js';
 import rulesImport from './src/rules/import.js';
+import rulesUnicorn from './src/rules/unicorn.js';
 
 const gitignorePath = path.join(process.cwd(), '.gitignore');
 
@@ -51,6 +52,7 @@ export default [
     },
     rules: {
       ...rulesBase,
+      ...rulesUnicorn,
     },
   },
   {
