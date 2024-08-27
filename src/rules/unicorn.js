@@ -9,6 +9,7 @@
 /* https://github.com/sindresorhus/eslint-plugin-unicorn/tree/v55.0.0/docs/rules */
 
 export default {
+  'unicorn/prefer-top-level-await': 0,
   'unicorn/prevent-abbreviations': [
     2,
     {
