@@ -15,6 +15,7 @@ export default {
       allowList: {
         dev: true,
         useDevServer: true,
+        args: true,
       },
     },
   ],
