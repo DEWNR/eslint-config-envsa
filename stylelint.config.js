@@ -46,6 +46,7 @@ export default {
   overrides: [
     {
       files: ['*.scss', '**/*.scss'],
+      plugins: ['stylelint-scss'],
       customSyntax: 'postcss-scss',
     },
   ],
