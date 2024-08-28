@@ -1,4 +1,5 @@
 import rulesBase from './src/stylelint/rules/base.js';
+import rulesScss from './src/stylelint/rules/scss.js';
 
 /** @type import('stylelint').Config */
 export default {
@@ -12,6 +13,9 @@ export default {
       files: ['*.scss', '**/*.scss'],
       plugins: ['stylelint-scss'],
       customSyntax: 'postcss-scss',
+      rules: {
+        ...rulesScss,
+      },
     },
   ],
 };
