@@ -1,12 +1,15 @@
 bgset
 blockless
 camelcase
+colour
 combobox
 ddev
 defaultstatus
 dewnrger
 drawnoxima
 envsa
+favicons
+formie
 lazyload
 lazysizes
 msedge
