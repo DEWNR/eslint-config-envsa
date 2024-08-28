@@ -4,7 +4,7 @@
   "description": "A config that can be used by all DEW projects",
   "repository": {
     "type": "git",
-    "url": "https://github.com/envsa/eslint-config"
+    "url": "git+https://github.com/envsa/eslint-config.git"
   },
   "license": "ISC",
   "author": "Liam Rella",
@@ -18,7 +18,7 @@
   },
   "main": "./src/index.js",
   "bin": {
-    "eslint-config": "./src/scripts/init.js"
+    "eslint-config": "src/scripts/init.js"
   },
   "scripts": {
     "beta:bump": "npm version prerelease --preid beta",
