@@ -10,12 +10,14 @@ drawnoxima
 envsa
 favicons
 formie
+glightbox
 grecaptcha
 lazyload
 lazysizes
 msedge
 nonconstructor
 openforms
+pcss
 plusplus
 preid
 productname
@@ -25,6 +27,7 @@ rellafella
 startdate
 stylelint
 stylelintrc
+swiper
 tailwindcss
 trivago
 tsup
