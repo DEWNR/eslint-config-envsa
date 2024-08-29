@@ -68,7 +68,7 @@ const LOOKUP = {
       '.stylelintrc.json',
     ],
     new: 'stylelint.config.js',
-    content: `import configEnvsa from '@envsa/eslint-config/stylelint';\n\n/** @type {import('stylelint').Config} */\nexport default { ...configEnvsa };\n`,
+    content: `import configEnvsa from '@envsa/eslint-config/stylelint';\n\n/** @type {import('stylelint').Config} */\nexport default { extends: [configEnvsa] };\n`,
   },
   cspell: {
     old: [],
