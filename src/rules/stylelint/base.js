@@ -6,13 +6,14 @@ export default {
       ignoreAtRules: ['else', 'apply'],
     },
   ],
+  'declaration-empty-line-before': 'never',
+  'import-notation': 'string',
   'no-descending-specificity': [
     true,
     {
       ignore: ['selectors-within-list'],
     },
   ],
-  'import-notation': 'string',
   'no-invalid-position-at-import-rule': [
     true,
     {
