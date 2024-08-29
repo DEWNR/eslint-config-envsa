@@ -28,14 +28,15 @@ const defaultIgnoredRules = {
  * @typedef TestCase
  * @property {string} name - Name of test.
  * @property {string} code - Code to test.
+ * @property {string} [codeFilename] - Filename for the code that will be tested, useful for overrides.
  * @property {ExpectedError[]} [expectedErrors] - If the test is expected to error put those errors here.
  */
 
 /**
  *
  * @param {'eslint'|'stylelint'} lintFlavour - Which linter do are you using, `eslint` or `stylelint`.
- * @param {string} code - String of code that you want to lint
- * @param {Record<string, any>} [rules] - Rules for this configuration
+ * @param {string} code - String of code that you want to lint.
+ * @param {string} codeFilename - Filename for the code that will be tested, useful for overrides.
  */
 async function lintCode(lintFlavour, code, codeFilename) {
   if (lintFlavour === 'eslint') {
@@ -58,7 +59,7 @@ async function lintCode(lintFlavour, code, codeFilename) {
 /**
  *
  * @param {'eslint'|'stylelint'} lintFlavour - Which linter do are you using, `eslint` or `stylelint`.
- * @param {import('stylelint').LintResult|import('eslint').ESLint.LintResult} result - Result from linting function
+ * @param {import('eslint').ESLint.LintResult|import('stylelint').LintResult} result - Result from linting function
  * @returns array
  */
 function normalizeResult(lintFlavour, result) {
@@ -67,9 +68,11 @@ function normalizeResult(lintFlavour, result) {
   }
 
   if (lintFlavour === 'stylelint') {
-    return result.warnings.map((warning) => {
+    const refactoredResult = result.warnings.map((warning) => {
       return { ruleId: warning.rule, message: warning.text };
     });
+
+    return refactoredResult;
   }
 
   throw new Error(`Invalid lintFlavour <${lintFlavour}>`);
