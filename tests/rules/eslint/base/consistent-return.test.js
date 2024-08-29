@@ -1,4 +1,4 @@
-import { testAll } from '../../../common.js';
+import { testRule } from '../../../common.js';
 
 const ignoredRules = ['unicorn/prefer-ternary', 'no-constant-condition', 'no-else-return'];
 
@@ -35,4 +35,4 @@ const testCases = [
   },
 ];
 
-testAll(import.meta.filename, testCases, ignoredRules);
+testRule(import.meta.filename, testCases, ignoredRules);

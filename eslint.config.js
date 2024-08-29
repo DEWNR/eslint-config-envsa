@@ -10,9 +10,9 @@ import pluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import path from 'node:path';
 import prettierConfig from './prettier.config.js';
-import rulesBase from './src/rules/base.js';
-import rulesImport from './src/rules/import.js';
-import rulesUnicorn from './src/rules/unicorn.js';
+import rulesBase from './src/rules/eslint/base.js';
+import rulesImport from './src/rules/eslint/import.js';
+import rulesUnicorn from './src/rules/eslint/unicorn.js';
 
 const gitignorePath = path.join(process.cwd(), '.gitignore');
 

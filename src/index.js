@@ -1,6 +1,6 @@
-import baseConfig from './configs/base.js';
-import svelteConfig from './configs/svelte.js';
-import vueConfig from './configs/vue.js';
+import baseConfig from './configs/eslint/base.js';
+import svelteConfig from './configs/eslint/svelte.js';
+import vueConfig from './configs/eslint/vue.js';
 
 export default {
   configs: {

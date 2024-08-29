@@ -77,7 +77,7 @@ function normalizeResult(lintFlavour, result) {
  * @param {TestCase[]} testCases - Test cases for a given rule.
  * @param {string[]} [ignoredTestRules] - List of rule ids to ignore.
  */
-export async function testAll(filepath, testCases, ignoredTestRules = []) {
+export async function testRule(filepath, testCases, ignoredTestRules = []) {
   const lintFlavour = filepath.split('/tests/rules/')[1]?.split('/')[0];
   const ignoredRules = new Set([...defaultIgnoredRules[lintFlavour], ...ignoredTestRules]);
   const filename = path.basename(filepath, '.test.js');

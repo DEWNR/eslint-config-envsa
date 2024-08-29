@@ -1,5 +1,5 @@
 /* eslint-disable unicorn/prevent-abbreviations */
-import { testAll } from '../../../common.js';
+import { testRule } from '../../../common.js';
 
 /** @type {import('../../../common.js').TestCase[]} */
 const testCases = [
@@ -14,4 +14,4 @@ const testCases = [
   },
 ];
 
-testAll(import.meta.filename, testCases);
+testRule(import.meta.filename, testCases);

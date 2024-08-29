@@ -16,6 +16,7 @@ msedge
 nonconstructor
 plusplus
 preid
+Rella
 rellafella
 stylelint
 stylelintrc

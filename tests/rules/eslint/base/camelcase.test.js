@@ -1,5 +1,5 @@
 /* eslint-disable capitalized-comments */
-import { testAll } from '../../../common.js';
+import { testRule } from '../../../common.js';
 
 // Allow for these options...
 // {
@@ -27,4 +27,4 @@ const testCases = [
   },
 ];
 
-testAll(import.meta.filename, testCases);
+testRule(import.meta.filename, testCases);

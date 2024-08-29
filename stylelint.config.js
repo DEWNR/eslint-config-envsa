@@ -1,21 +1,12 @@
-import rulesBase from './src/stylelint/rules/base.js';
-import rulesScss from './src/stylelint/rules/scss.js';
+import rulesBase from './src/rules/stylelint/base.js';
+import rulesScss from './src/rules/stylelint/scss.js';
 
 /** @type import('stylelint').Config */
 export default {
-  extends: ['stylelint-config-standard'],
+  extends: 'stylelint-config-standard-scss',
   ignoreFiles: ['./vendor/**/*'],
   rules: {
     ...rulesBase,
+    ...rulesScss,
   },
-  overrides: [
-    {
-      files: ['*.scss', '**/*.scss'],
-      plugins: ['stylelint-scss'],
-      customSyntax: 'postcss-scss',
-      rules: {
-        ...rulesScss,
-      },
-    },
-  ],
 };

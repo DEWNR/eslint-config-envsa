@@ -11,10 +11,10 @@
   "type": "module",
   "exports": {
     ".": "./src/index.js",
-    "./cspell": "./src/cspell/cspell.config.cjs",
-    "./prettier": "./src/prettier/index.js",
-    "./prettier/svelte": "./src/prettier/svelte.js",
-    "./stylelint": "./src/stylelint/index.js"
+    "./cspell": "./src/configs/cspell/cspell.config.cjs",
+    "./prettier": "./src/configs/prettier/index.js",
+    "./prettier/svelte": "./src/configs/prettier/svelte.js",
+    "./stylelint": "./src/configs/stylelint/index.js"
   },
   "main": "./src/index.js",
   "bin": {
@@ -43,13 +43,12 @@
     "eslint-plugin-unicorn": "^55.0.0",
     "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.9.0",
-    "postcss-scss": "^4.0.9",
     "prettier-plugin-organize-imports": "^4.0.0",
     "prettier-plugin-svelte": "^3.2.6",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "semver": "^7.6.3",
     "stylelint-config-standard": "^36.0.1",
-    "stylelint-scss": "^6.5.1",
+    "stylelint-config-standard-scss": "^13.1.0",
     "svelte-eslint-parser": "^0.41.0",
     "vue-eslint-parser": "^9.4.3"
   },
