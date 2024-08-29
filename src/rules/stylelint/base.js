@@ -8,16 +8,7 @@ export default {
   ],
   'declaration-empty-line-before': 'never',
   'import-notation': 'string',
-  'no-descending-specificity': [
-    true,
-    {
-      ignore: ['selectors-within-list'],
-    },
-  ],
-  'no-invalid-position-at-import-rule': [
-    true,
-    {
-      ignoreAtRules: ['tailwind'],
-    },
-  ],
+  'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }],
+  'no-invalid-position-at-import-rule': [true, { ignoreAtRules: ['tailwind'] }],
+  'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
 };
