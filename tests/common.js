@@ -37,13 +37,18 @@ const defaultIgnoredRules = {
  * @param {string} code - String of code that you want to lint
  * @param {Record<string, any>} [rules] - Rules for this configuration
  */
-async function lintCode(lintFlavour, code) {
+async function lintCode(lintFlavour, code, codeFilename) {
   if (lintFlavour === 'eslint') {
-    return await eslint.lintText(code);
+    return await eslint.lintText(code, {
+      ...(codeFilename.length > 0 && { filePath: codeFilename }),
+    });
   }
 
   if (lintFlavour === 'stylelint') {
-    const { results } = await stylelint.lint({ code });
+    const { results } = await stylelint.lint({
+      code,
+      ...(codeFilename.length > 0 && { codeFilename }),
+    });
     return results;
   }
 
@@ -87,10 +92,10 @@ export async function testRule(filepath, testCases, ignoredTestRules = []) {
   }
 
   describe(filename, () => {
-    for (const { name, code, expectedErrors } of testCases) {
+    for (const { name, code, codeFilename = '', expectedErrors } of testCases) {
       // eslint-disable-next-line no-loop-func
       test(name, async () => {
-        const [result] = await lintCode(lintFlavour, code);
+        const [result] = await lintCode(lintFlavour, code, codeFilename);
         const errors = normalizeResult(lintFlavour, result).filter(
           (message) => !ignoredRules.has(message.ruleId)
         );

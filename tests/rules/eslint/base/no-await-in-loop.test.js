@@ -8,11 +8,17 @@ const testCases = [
     expectedErrors: [],
   },
   {
+    name: 'should allow await inside loops in a test file',
+    codeFilename: 'valid.test.js',
+    code: `for (const item of list) { const data = await item.getData(); };`,
+    expectedErrors: [],
+  },
+  {
     name: 'should disallow await inside loops',
-    code: `for (let i = 0; i < 10; i++) { const result = await fetchData(); };`,
+    code: `for (const item of list) { const data = await item.getData(); };`,
     expectedErrors: [
       {
-        message: 'Unexpected await inside a loop.',
+        message: 'Unexpected `await` inside a loop.',
       },
     ],
   },
