@@ -10,6 +10,9 @@ grecaptcha
 lazyload
 lazysizes
 nonconstructor
+npsa
+npws
+npwssa
 openforms
 pcss
 preid

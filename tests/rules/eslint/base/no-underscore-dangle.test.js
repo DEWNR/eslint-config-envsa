@@ -18,13 +18,9 @@ const testCases = [
     expectedErrors: [],
   },
   {
-    name: 'should disallow dangling underscores in identifiers',
+    name: 'should allowed dangling underscores in identifiers',
     code: `const _foo = 1;`,
-    expectedErrors: [
-      {
-        message: "Unexpected dangling '_' in '_foo'.",
-      },
-    ],
+    expectedErrors: [],
   },
 ];
 

@@ -217,12 +217,6 @@ export default {
     },
   ],
   'no-throw-literal': 2,
-  'no-underscore-dangle': [
-    2,
-    {
-      allow: ['__dirname', '__filename'],
-    },
-  ],
   'no-unneeded-ternary': 2,
   'no-unused-expressions': [
     2,
