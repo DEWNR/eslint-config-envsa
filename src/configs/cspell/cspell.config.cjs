@@ -52,4 +52,5 @@ module.exports = {
     'svelte',
     'typescript',
   ],
+  useGitignore: true,
 };

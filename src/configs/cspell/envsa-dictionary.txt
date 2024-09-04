@@ -1,4 +1,5 @@
 bgset
+contentmigrations
 ddev
 defaultstatus
 dewnrger
@@ -9,6 +10,7 @@ glightbox
 grecaptcha
 lazyload
 lazysizes
+metabundles
 nonconstructor
 npsa
 npws
@@ -17,8 +19,11 @@ openforms
 pcss
 preid
 productname
+redactoranchors
 Rella
 rellafella
+seomatic
+solspace
 startdate
 stylelintrc
 trivago
